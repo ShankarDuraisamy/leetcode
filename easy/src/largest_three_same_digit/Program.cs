@@ -1,4 +1,6 @@
 ﻿
+using System.Diagnostics;
+
 class SlidingWindowTechnique
 {
     public string LargestGoodInteger(string num)
@@ -14,5 +16,10 @@ class SlidingWindowTechnique
             first_ptr = last_ptr++;
         }
         return result == -1 ? "" : $"{result}{result}{result}";
+    }
+
+    public static void Main(string[] args)
+    {
+
     }
 }
