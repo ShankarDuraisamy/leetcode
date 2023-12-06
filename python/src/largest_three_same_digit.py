@@ -2,7 +2,7 @@
 class LargestThreeSameDigit:
 
 	@staticmethod
-	def solve(self, num: str) -> str:
+	def solve(num: str) -> str:
 		left_ptr = 0
 		right_ptr = 0
 		result = -1
