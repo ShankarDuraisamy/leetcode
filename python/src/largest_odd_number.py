@@ -1,16 +1,18 @@
 from typing import List
 
 
-class TwoSum:
+class LargestOddNumber:
 	@staticmethod
-	def solve(nums: List[int], target: int) -> List[int]:
-		hash_table = {}
-		for i, n, in enumerate(nums):
-			diff = target - n
-			if diff in hash_table:
-				return [hash_table.get(diff), i]
-			else:
-				hash_table[n] = i
+	def solve(num: str) -> str:
+		right_ptr = len(num) - 1
+		while right_ptr != -1:
+			if int(num[right_ptr]) % 2 != 0:
+				return num[0:right_ptr + 1]
+			right_ptr += 1
+
+		return ""
+
 
 if __name__ == "__main__":
-	print(TwoSum.solve([2,7,11,15], 9))
+	num = "54"
+	print(LargestOddNumber.solve("52"))
