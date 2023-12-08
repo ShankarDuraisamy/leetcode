@@ -11,6 +11,7 @@ class TwoSum:
 				return [hash_table.get(diff), i]
 			else:
 				hash_table[n] = i
+		return []
 
 if __name__ == "__main__":
 	print(TwoSum.solve([2,7,11,15], 9))

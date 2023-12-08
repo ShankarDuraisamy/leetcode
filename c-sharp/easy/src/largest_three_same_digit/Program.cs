@@ -17,9 +17,4 @@ class SlidingWindowTechnique
         }
         return result == -1 ? "" : $"{result}{result}{result}";
     }
-
-    public static void Main(string[] args)
-    {
-
-    }
 }
