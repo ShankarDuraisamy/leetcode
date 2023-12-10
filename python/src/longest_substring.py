@@ -20,6 +20,7 @@ class LengthOfLongestSubString:
 				hash_table[s[right_ptr]] = 0
 			right_ptr += 1
 		return result if result > len(hash_table) else len(hash_table)
+
 if __name__ == "__main__":
 	string = 'abcabcbb'
 	print(LengthOfLongestSubString.solve(string))
