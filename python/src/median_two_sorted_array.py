@@ -34,7 +34,7 @@ class MedianSortedArray:
 		itr_ctl = len(nums1) + len(nums2)
 		itr_ctl = int(itr_ctl / 2) if int(itr_ctl % 2) == 0 else int(itr_ctl / 2) + 1
 		count = 0
-		while first_ptr < len(nums1) and second_ptr < len(nums2) and count<=itr_ctl:
+		while first_ptr < len(nums1) and second_ptr < len(nums2) and count <= itr_ctl:
 			if nums1[first_ptr] < nums2[second_ptr]:
 				result.append(nums1[first_ptr])
 				first_ptr += 1
