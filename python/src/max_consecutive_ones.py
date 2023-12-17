@@ -34,8 +34,5 @@ class MaxConsecutiveOnes:
 
 
 
-
-
-
 if __name__ == "__main__":
 	print(MaxConsecutiveOnes.solve([1,1,0,1,1,1]))

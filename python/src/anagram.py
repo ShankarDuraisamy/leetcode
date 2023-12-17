@@ -20,6 +20,11 @@ class Anagram:
 				return False
 		return True
 
+
+	'''
+		Not working
+	'''
+
 	@staticmethod
 	def solve1(s: str, t: str) -> bool:
 		if len(s) != len(t):

@@ -12,7 +12,7 @@ class DestinationCity:
 		for i, n, in enumerate(nums):
 			for j, city, in enumerate(n):
 				if city not in hash_table:
-					return citt
+					return city
 		return ""
 
 	@staticmethod
